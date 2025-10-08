@@ -1,0 +1,95 @@
+.wrapper { padding: 24px 0; }
+
+.panel {
+  border: 2px solid var(--black);
+  background: var(--bg-elevated);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.sub { color: var(--text-secondary); margin-top: 4px; }
+
+.dropzone,
+.dropzoneActive {
+  margin-top: 14px;
+  border: 2px dashed var(--black);
+  background: var(--mint);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+.dropzoneActive { transform: scale(1.01); background: #b9eac4; }
+
+.dropHint { color: var(--text-secondary); }
+
+.fileInfo { display: flex; justify-content: center; gap: 8px; }
+.fileName { font-weight: 700; }
+.fileMeta { color: var(--text-secondary); }
+
+.actions { margin-top: 16px; display: flex; gap: 10px; }
+
+.primaryBtn {
+  appearance: none;
+  border: 2px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+}
+.primaryBtn:hover { background: var(--white); color: var(--black); transform: scale(1.03); }
+.primaryBtn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.secondaryBtn {
+  appearance: none;
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.secondaryBtn:hover { background: var(--black); color: var(--white); }
+
+.result { margin-top: 16px; border: 2px solid var(--black); background: var(--yellow); }
+.resultRow { display: flex; justify-content: space-between; }
+.resultLabel { font-weight: 700; }
+.resultConf { }
+.resultHint { margin-top: 6px; color: var(--text-secondary); }
+
+.recordRow { margin-top: 12px; display: flex; align-items: center; gap: 12px; }
+.recordStatusBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--black);
+  background: var(--white);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+.recordDot { width: 10px; height: 10px; border-radius: 50%; background: #6b7280; }
+.recordDotActive { background: #ef4444; animation: pulse 1s ease-in-out infinite; }
+.recordText { font-size: 12px; color: var(--black); }
+
+.waveRow { display: flex; align-items: flex-end; gap: 4px; margin-top: 12px; height: 24px; }
+.waveBar { width: 6px; height: 10px; background: var(--pink); border: 2px solid var(--black); border-radius: 6px; animation: bounce 900ms ease-in-out infinite; }
+.waveBar:nth-child(2) { height: 14px; animation-delay: 100ms; }
+.waveBar:nth-child(3) { height: 18px; animation-delay: 200ms; }
+.waveBar:nth-child(4) { height: 14px; animation-delay: 300ms; }
+.waveBar:nth-child(5) { height: 10px; animation-delay: 400ms; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.85; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+

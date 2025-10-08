@@ -1,0 +1,22 @@
+.wrapper {
+  height: 160px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.04) 1px,
+    rgba(255,255,255,0.02) 1px,
+    rgba(255,255,255,0.02) 6px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+

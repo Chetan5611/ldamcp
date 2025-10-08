@@ -1,0 +1,52 @@
+.wrapper {
+  padding: 24px 0;
+}
+
+.section {
+  padding: 24px;
+  border: 2px solid var(--black);
+  background: var(--bg-elevated);
+}
+
+.select {
+  margin-top: 8px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.switchRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 14px;
+  padding: 8px 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip,
+.chipActive {
+  appearance: none;
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  padding: 6px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.chipActive {
+  background: var(--black);
+  color: var(--white);
+}
+
+

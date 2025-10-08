@@ -1,0 +1,89 @@
+.App {
+  min-height: 100vh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10,26,43,0.8);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(6px);
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.brand-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--color-blue-accent), #163454);
+  box-shadow: var(--shadow-sm);
+}
+
+.brand-title {
+  color: var(--text-primary);
+}
+
+.hero {
+  padding: 56px 0 24px;
+}
+
+.hero-card {
+  padding: 28px;
+}
+
+.hero h1 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.sections {
+  padding: 12px 0 48px;
+}
+
+.section {
+  padding: 16px;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding: 24px;
+  color: var(--text-secondary);
+}

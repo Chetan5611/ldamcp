@@ -1,0 +1,20 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-elevated);
+  border: 2px solid var(--black);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.15);
+}
+
+.text { color: var(--black); font-size: 12px; }
+
+
